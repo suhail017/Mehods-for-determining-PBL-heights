@@ -14,11 +14,11 @@ file2 = 'nov14.nc';
 height = ncread(file1,'height');
 height_AGL = ncread(file1,'height_AGL');
 %  base_time = ncread(file1,'base_time');
-  base_time = 1496728800;
+  base_time = 1496728800;   %Change it according the time
 % t_new=linspace(0,85800,300);
 % t_new=t_new(:);
 r = dlmread('june06.dat');
-  bc = r(:,(10:287));
+  bc = r(:,length(r));
   
  t_new=linspace(0,85800,size(bc,1));
 t_new=t_new(:);
